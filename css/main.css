@@ -65,6 +65,7 @@ nav > a  {
     border-radius: 5px;
     list-style-type: none;
     max-width: 600px;
+    max-height: 800px;
     opacity: 0.1;
 }
 .noti-dropdown > li {

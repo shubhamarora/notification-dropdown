@@ -1,0 +1,110 @@
+body {
+    background-color: lightgray;
+    margin: 0;
+}
+header {
+    height: 45px;
+    background-color: white;
+}
+nav > a  {
+    float: left;
+}
+.noti {
+    position: relative;
+    display: block;
+    border-left: 1px solid lightgrey;
+    padding: 10px;
+    left: 150px;
+}
+.icon-bell {
+    position: absolute;
+    top: 10px;
+    font-size: 1.5em;
+    color: grey;
+    cursor: pointer;
+}
+.noti-number {
+    position: absolute;
+    top: 8px;
+    left: 22px;
+    color: white;
+    background-color: #00cdcd;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    font-size: 0.85em;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.noti-title {
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.1em;
+    color: gray;
+}
+.noti-title-number {
+    display: inline-block;
+    color: white;
+    background-color: #00cdcd;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    margin: 10px;
+}
+.noti-dropdown {
+    position: absolute;
+    top: 250%;
+    left: -8%;
+    display: none;
+    padding: 0;
+    color: black;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    list-style-type: none;
+    max-width: 600px;
+    opacity: 0.1;
+}
+.noti-dropdown > li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    height: 70px;
+    background-color: #E9EFF2;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    box-sizing: border-box;
+}
+.noti-dropdown > li:hover {
+    background-color: #dbe1e4;
+}
+.noti-item-photo {
+    display: block;
+    box-sizing: border-box;
+    width: 22%;
+    float: left;
+    height: auto;
+    margin: 3px;
+}
+.noti-item-photo > span {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: white !important;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: 100% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+.noti-item-content {
+    width: 72%;
+    float: left;
+    font-size: 0.9em;
+    text-align: left;
+    vertical-align: middle;
+    margin-top: 5px;
+}

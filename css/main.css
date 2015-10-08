@@ -1,3 +1,7 @@
+/**
+ * Created by Shubham on 10/8/2015.
+ */
+
 body {
     background-color: lightgray;
     margin: 0;
@@ -48,7 +52,7 @@ header {
     height: 40px ;
     opacity: 1;
     top: 354%;
-    left: -8%;
+    left: -9%;
     width: 300px;
     border-radius: 5px 5px 0 0;
 }
@@ -66,7 +70,7 @@ header {
 .noti-dropdown {
     position: absolute;
     top: 600%;
-    left: -8%;
+    left: -9%;
     display: none;
     padding: 0;
     color: black;
@@ -78,6 +82,17 @@ header {
     opacity: 0.1;
     margin: 0;
     border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+.nub {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    display: inline-block;
+    top: -5px;
+    left: 144px;
+    transform: rotate(45deg);
 }
 .noti-dropdown > li > a {
     color: gray;
@@ -132,4 +147,11 @@ header {
     color: gray;
     top: 30%;
     left: 25%;
+}
+section {
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid white;
+    margin-top: 250px;
+    padding: 20px;
 }

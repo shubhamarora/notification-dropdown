@@ -1,5 +1,5 @@
 /**
- * Created by Shubham on 10/7/2015.
+ * Created by Shubham on 10/8/2015.
  */
 
 $(document).ready(function () {
@@ -65,6 +65,6 @@ $(document).ready(function () {
         });
 
         // send request for new notifications after random intervals
-        setTimeout(getNotifications,Math.floor((Math.random() * 1500) + 10000));
+        setTimeout(getNotifications,Math.floor((Math.random() * 5000) + 10000));
     })();
 });

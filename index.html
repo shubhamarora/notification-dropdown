@@ -16,7 +16,7 @@
                     <span class="icon-bell"></span>
                     <span class="noti-number">0</span>
                 </div>
-                <div class="noti-title">Notification<span class="noti-title-number">0</span></div>
+                <div class="noti-title">Notification<span class="noti-title-number">0</span><span class="nub">&nbsp;</span></div>
                 <ul class="noti-dropdown">
                     <div class="placeholder">No New Notification</div>
                 </ul>
@@ -24,6 +24,17 @@
         </a>
     </nav>
 </header>
+<section>
+    <b>Features:</b>
+    <ul>
+        <li>Bell shows number of new notifications (unread ones)</li>
+        <li>Push new notifications with an animation effect</li>
+        <li>Unread notification has different background color (darker than read ones)</li>
+        <li>On closing the Dropdown, unread notification are supposed to be read and the darker background color change to normal / usual grey scale</li>
+        <li>Dropdown close on clicking on bell again or clicking outside</li>
+        <li>Front keep polling for new notification after a random interval, between 10 sec to 15 sec</li>
+    </ul>
+</section>
 <script src="js/jquery-2.1.4.js"></script>
 <script src="js/main.js"></script>
 </body>

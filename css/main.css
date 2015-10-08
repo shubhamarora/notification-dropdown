@@ -71,15 +71,25 @@ header {
     opacity: 0.1;
     margin: 0;
 }
+@-webkit-keyframes new-notification {
+    0% {background-color: #c3c9cc;}
+    100% {background-color: #E9EFF2;}
+}
+@keyframes new-notification {
+    0% {background-color: #c3c9cc;}
+    100% {background-color: #E9EFF2;}
+}
 .noti-dropdown > li {
     display: block;
     width: 100%;
     border-bottom: 1px solid lightgrey;
     height: 70px;
-    background-color: #c3c9cc;
+    background-color: #E9EFF2;
     text-align: center;
     padding: 10px 5px 10px 5px;
     box-sizing: border-box;
+    -webkit-animation: new-notification 2s ease-in 1;
+    animation: new-notification 2s ease-in 1;
 }
 .noti-dropdown > li:hover {
     background-color: #dbe1e4;

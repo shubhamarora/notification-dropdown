@@ -5,7 +5,7 @@
 $(document).ready(function () {
 
     $('html').on('click', function (event) {
-        if(!($(event.target).hasClass('icon-bell') || $(event.target).hasClass('noti-number'))) {
+        if(!($(event.target).hasClass('icon-bell') || $(event.target).hasClass('noti-number') || $(event.target).is('.noti-dropdown >li:first'))) {
             $(".noti-dropdown").hide()
                 .css({"top":"300%","opacity":"0.1"});;
         }
@@ -39,7 +39,7 @@ $(document).ready(function () {
                                 '<div class=\"noti-item-photo\"><span style=\"background:url(' + item.photo +')\"></span></div>'+
                                 '<div class=\"noti-item-content\">'+ item.content + ' - ' + randomNum +'</div>'+
                                 '</a>'+
-                                '</li>').animate({"background-color":"#E9EFF2"},500);
+                                '</li>');
                     });
                     $(".noti-number, .noti-title-number").empty().append(response.data.count).show();
                 }

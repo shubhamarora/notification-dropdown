@@ -1,6 +1,7 @@
 body {
     background-color: lightgray;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 header {
     height: 45px;
@@ -30,7 +31,7 @@ header {
     width: 16px;
     height: 16px;
     text-align: center;
-    font-size: 0.85em;
+    font-size: 0.75em;
     border: 1px solid white;
     cursor: pointer;
     display: none;
@@ -43,6 +44,7 @@ header {
     background-color: white !important;
     margin-top: 10px;
     height: 40px !important;
+    opacity: 1;
 }
 .noti-title-number {
     display: inline-block !important;
@@ -54,6 +56,7 @@ header {
     text-align: center;
     margin: 5px;
     display: none;
+    font-size: 0.8em;
 }
 .noti-dropdown {
     position: absolute;
@@ -71,13 +74,8 @@ header {
     opacity: 0.1;
     margin: 0;
 }
-@-webkit-keyframes new-notification {
-    0% {background-color: #c3c9cc;}
-    100% {background-color: #E9EFF2;}
-}
-@keyframes new-notification {
-    0% {background-color: #c3c9cc;}
-    100% {background-color: #E9EFF2;}
+.noti-dropdown > li > a {
+    color: gray;
 }
 .noti-dropdown > li {
     display: block;
@@ -85,14 +83,16 @@ header {
     border-bottom: 1px solid lightgrey;
     height: 70px;
     background-color: #E9EFF2;
+    opacity: 0;
     text-align: center;
     padding: 10px 5px 10px 5px;
     box-sizing: border-box;
-    -webkit-animation: new-notification 2s ease-in 1;
-    animation: new-notification 2s ease-in 1;
 }
 .noti-dropdown > li:hover {
-    background-color: #dbe1e4;
+    background-color: #dbe1e4 ;
+}
+.new {
+    background-color: #d5dbde !important;
 }
 .noti-item-photo {
     display: block;

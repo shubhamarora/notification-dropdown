@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'noti';
+  src: url('../font/noti.eot?98206307');
+  src: url('../font/noti.eot?98206307#iefix') format('embedded-opentype'),
+       url('../font/noti.woff?98206307') format('woff'),
+       url('../font/noti.ttf?98206307') format('truetype'),
+       url('../font/noti.svg?98206307#noti') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "noti";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+}
+ 
+.icon-bell:before { content: '\e800'; } /* '' */
+.icon-bell-alt:before { content: '\e801'; } /* '' */

@@ -6,21 +6,21 @@ $(document).ready(function () {
 
     $('html').on('click', function (event) {
         if(!($(event.target).hasClass('icon-bell') || $(event.target).hasClass('noti-number'))) {
-            $(".noti-dropdown").hide().css({"top":"600%","opacity":0.1});
-            $(".noti-title").hide().css({"top":"354%","opacity":0.1});
+            $(".noti-dropdown").hide()
+                .css({"top":"300%","opacity":"0.1"});
             $(".noti-dropdown > li").removeClass("new");
         }
     });
 
     $(".icon-bell,.noti-number").click(function () {
         if($(".noti-dropdown").css('display') == "none") {
-            $(".noti-dropdown").show().animate({top:'546%',opacity:1},800);
-            $(".noti-title").show().css({"top":"300%","opacity":1},1200);
+            $(".noti-dropdown").show()
+                .animate({top:'250%',opacity:1},800);
             $(".noti-number, .noti-title-number").hide().text("0");
         }
         else {
-            $(".noti-dropdown").hide().css({"top":"600%","opacity":0.1});
-            $(".noti-title").hide().css({"top":"354%","opacity":0.1});
+            $(".noti-dropdown").hide()
+                .css({"top":"300%","opacity":"0.1"});
             $(".noti-number, .noti-title-number").hide().text("0");
             $(".noti-dropdown > li").removeClass("new");
         }
@@ -38,7 +38,7 @@ $(document).ready(function () {
                     var randomNum = Math.floor((Math.random() * 1000) + 1);
 
                     // add new notification in the drop - prepend in the list
-                    $("ul.noti-dropdown").prepend(
+                    $("ul.noti-dropdown > li:first").after(
                             '<li class=\"new\">'+
                             '<a href=\"' + item.link + '\">'+
                             '<div class=\"noti-item-photo\"><span style=\"background:url(' + item.photo +')\"></span></div>'+

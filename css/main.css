@@ -6,9 +6,6 @@ header {
     height: 45px;
     background-color: white;
 }
-nav > a  {
-    float: left;
-}
 .noti {
     position: relative;
     display: block;
@@ -36,26 +33,31 @@ nav > a  {
     font-size: 0.85em;
     border: 1px solid white;
     cursor: pointer;
+    display: none;
 }
 .noti-title {
-    text-align: center;
-    padding: 10px 20px 10px 20px;
-    font-size: 1.1em;
+    text-align: center !important;
+    padding: 0 20px 0 20px !important;
+    font-size: 1.2em !important;
     color: gray;
+    background-color: white !important;
+    margin-top: 10px;
+    height: 40px !important;
 }
 .noti-title-number {
-    display: inline-block;
+    display: inline-block !important;
     color: white;
     background-color: #00cdcd;
     border-radius: 100%;
     width: 18px;
     height: 18px;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
+    display: none;
 }
 .noti-dropdown {
     position: absolute;
-    top: 250%;
+    top: 300%;
     left: -8%;
     display: none;
     padding: 0;
@@ -64,16 +66,17 @@ nav > a  {
     border: 1px solid lightgrey;
     border-radius: 5px;
     list-style-type: none;
-    max-width: 600px;
+    width: 300px;
     max-height: 800px;
     opacity: 0.1;
+    margin: 0;
 }
 .noti-dropdown > li {
     display: block;
     width: 100%;
     border-bottom: 1px solid lightgrey;
     height: 70px;
-    background-color: #E9EFF2;
+    background-color: #c3c9cc;
     text-align: center;
     padding: 10px 5px 10px 5px;
     box-sizing: border-box;

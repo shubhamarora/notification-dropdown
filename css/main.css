@@ -10,7 +10,6 @@ header {
 .noti {
     position: relative;
     display: block;
-    border-left: 1px solid lightgrey;
     padding: 10px;
     left: 150px;
 }
@@ -20,11 +19,13 @@ header {
     font-size: 1.5em;
     color: grey;
     cursor: pointer;
+    padding-left: 5px;
+    border-left: 1px solid lightgrey;
 }
 .noti-number {
     position: absolute;
-    top: 8px;
-    left: 22px;
+    top: 10px;
+    left: 29px;
     color: white;
     background-color: #00cdcd;
     border-radius: 100%;
@@ -76,6 +77,7 @@ header {
     overflow: auto;
     opacity: 0.1;
     margin: 0;
+    border-top: 1px solid lightgrey;
 }
 .noti-dropdown > li > a {
     color: gray;
@@ -124,4 +126,10 @@ header {
     text-align: left;
     vertical-align: middle;
     margin-top: 5px;
+}
+.placeholder {
+    position: absolute;
+    color: gray;
+    top: 30%;
+    left: 25%;
 }

@@ -57,8 +57,7 @@ header {
     border-radius: 5px 5px 0 0;
 }
 .noti-title-number {
-    display: block;
-    padding: 0 6px;
+    padding: 1px 6px;
     color: white;
     background-color: #00cdcd;
     border-radius: 100%;
